@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pizzeria Boss - Pizza in Groși, Maramureș</title>
+	<meta name="description" content="Bucură-te de pizza autentică la ușa ta în Groși, Maramureș! Livrare rapidă și gusturi delicioase. Descoperă meniul nostru diversificat cu pizza Margherita, Vegetariana, Diavola și multe altele. Comandă acum și primești livrare gratuită la 5 pizza comandate.">
+	<link rel="stylesheet" href="CSS/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class = "header_2" id="sus">
+		<nav id ="nav_2">
+			<a href="index.html" onclick="closeClass('ul', 'active')" class="logo">PIZZERIA<br>BOSS</a>
+			<div class ="nav-links" id="navLinks">
+				<ul id="ul">
+					<li><a href="index.html #intro" onclick="closeClass('ul', 'active')">ACASA</a></li>
+					<li><a href="index.html #meniu" onclick="closeClass('ul', 'active')">MENIU</a></li>
+					<li><a href="index.html #livrare" onclick="closeClass('ul', 'active')">LIVRARE</a></li>
+					<li><a href="index.html #despre-noi" onclick="closeClass('ul', 'active')">DESPRE NOI</a></li>
+					<li><a href="index.html #contact" onclick="closeClass('ul', 'active')">CONTACT</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="toggleClass('ul', 'active')"></i>
+
+		</nav>
+	</section>
+<!-- cookies -->
+
+<section class="cookie">
+
+<div class="cookie_wrapper">
+	<h1>Politica de Confidențialitate - Pizzeria Boss</h1>
+	<p>Data ultimei actualizări: 03.08.2023</p>
+
+	<h2>Informații generale</h2>
+	<p>Bun venit la Pizzeria Boss! Ne bucurăm să te avem ca vizitator pe site-ul nostru. Pentru a-ți oferi o experiență cât mai plăcută și sigură pe site-ul nostru, dorim să te informăm că Pizzeria Boss nu colectează și nu prelucrează în niciun fel datele tale cu caracter personal.</p>
+
+	<h2>Ce informații colectăm?</h2>
+	<p>Înțelegem importanța confidențialității datelor tale. De aceea, te asigurăm că nu colectăm și nu stocăm nicio informație personală în timp ce navighezi pe site-ul nostru.</p>
+
+	<h2>Cookie-uri și tehnologii similare</h2>
+	<p>Site-ul nostru utilizează cookie-uri și tehnologii similare pentru a-ți îmbunătăți experiența de navigare. Acestea nu conțin date cu caracter personal și nu sunt folosite pentru a urmări activitățile tale online.</p>
+	<p>Poți gestiona preferințele privind cookie-urile în setările browser-ului tău.</p>
+
+	<h2>Link-uri către site-uri terțe</h2>
+	<p>Site-ul nostru poate conține link-uri către site-uri terțe. Te rugăm să fii conștient că politica noastră de confidențialitate se aplică doar site-ului nostru. Nu suntem responsabili pentru conținutul sau practicile de confidențialitate ale altor site-uri.</p>
+
+	<h2>Întrebări și contact</h2>
+	<p>Dacă ai întrebări sau nelămuriri cu privire la politica noastră de confidențialitate, te rugăm să ne contactezi la nr. de telefon: 0770210245</p>
+
+	<p>Te mulțumim pentru încrederea acordată și pentru că ne-ai vizitat site-ul. Îți dorim o zi plăcută!</p>
+
+</div>
+
+
+</section>
+<!-- Footer -->
+
+	<div class="footer">
+		<div class="icons">
+			<a href="https://www.facebook.com/pizzeriabosss" target="_blank" aria-label="Pagina de Facebook"><i class="fa fa-facebook"></i></a>
+			<a href="https://www.instagram.com/" target="_blank" aria-label="Pagina de Instagram"><i class="fa fa-instagram"></i></a>
+		</div>
+		<div>
+			<p>©2023 Toate Drepturile Rezervate -  <a href="conf.html" target="_blank">Politica de confidentialitate</a> - <a href="https://anpc.ro/" target="_blank">ANPC</a></p>
+			<p>Creat de G28 media</p>
+		</div>
+	</div>
+
+
+
+	<!-- JavaScript -->
+<script>
+let navbar = document.getElementById("nav_2");
+
+	function toggleClass(targetId, className) {
+		let target = document.getElementById(targetId);
+		target.classList.toggle(className);
+	}
+function closeClass(targetId, className) {
+	let target = document.getElementById(targetId);
+	target.classList.remove(className);
+}
+
+</script>
+</body>
+</html>
