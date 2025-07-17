@@ -11,20 +11,19 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-	<section class = "header" id="sus">
+<body>	<section class = "header" id="sus">
 		<nav id ="nav">
-			<a href="#sus" onclick="closeClass('ul', 'active')" class="logo">PIZZERIA<br>BOSS</a>
+			<a href="#sus" onclick="closeClass('navLinks', 'active')" class="logo">PIZZERIA<br>BOSS</a>
 			<div class ="nav-links" id="navLinks">
 				<ul id="ul">
-					<li><a href="#intro" onclick="closeClass('ul', 'active')">ACASA</a></li>
-					<li><a href="#meniu" onclick="closeClass('ul', 'active')">MENIU</a></li>
-					<li><a href="#livrare" onclick="closeClass('ul', 'active')">LIVRARE</a></li>
-					<li><a href="#despre-noi" onclick="closeClass('ul', 'active')">DESPRE NOI</a></li>
-					<li><a href="#contact" onclick="closeClass('ul', 'active')">CONTACT</a></li>
+					<li><a href="#intro" onclick="closeClass('navLinks', 'active')">ACASA</a></li>
+					<li><a href="#meniu" onclick="closeClass('navLinks', 'active')">MENIU</a></li>
+					<li><a href="#livrare" onclick="closeClass('navLinks', 'active')">LIVRARE</a></li>
+					<li><a href="#despre-noi" onclick="closeClass('navLinks', 'active')">DESPRE NOI</a></li>
+					<li><a href="#contact" onclick="closeClass('navLinks', 'active')">CONTACT</a></li>
 				</ul>
 			</div>
-			<i class="fa fa-bars" onclick="toggleClass('ul', 'active')"></i>
+			<i class="fa fa-bars" onclick="toggleClass('navLinks', 'active')"></i>
 
 		</nav>
 
@@ -71,116 +70,116 @@
 <section class="meniu" id="meniu">
 	<h1>Meniu</h1>
 	<h2>Pizza</h2>
-	<div class = "meniu-wrapper">
-	<div class="a-col">
-		<h3>Margherita - 20 LEI</h3>
-		<p>- sos roșii, mozzarella</p>
+	<div class = "meniu-wrapper">	<div class="a-col">
+		<h3 data-price="20 LEI">Margherita</h3>
+		<p>sos roșii, mozzarella</p>
 	</div>
 
 	<div class="a-col">
-		<h3>Vegetariana - 25 LEI</h3>
-		<p>- sos roșii, mozzarella, porumb, ciuperci, ardei, măsline</p>
+		<h3 data-price="25 LEI">Vegetariana</h3>
+		<p>sos roșii, mozzarella, porumb, ciuperci, ardei, măsline</p>
 	</div>
 
 	<div class="a-col">
-		<h3>Inferno - 25 LEI</h3>
-		<p>- sos roșii, mozzarella, salam picant, peperoncino</p>
+		<h3 data-price="25 LEI">Inferno</h3>
+		<p>sos roșii, mozzarella, salam picant, peperoncino</p>
 	</div>
 
 	<div class="a-col">
-		<h3>Diavola - 25 LEI</h3>
-		<p>- sos roșii, mozzarella, salam picant, ardei gras</p>
+		<h3 data-price="25 LEI">Diavola</h3>
+		<p>sos roșii, mozzarella, salam picant, ardei gras</p>
 	</div>
 
 	<div class="a-col">
-		<h3>Capriciosa - 25 LEI</h3>
-		<p>- sos roșii, mozzarella, prosciutto, ciuperci, ardei, porumb</p>
+		<h3 data-price="25 LEI">Capriciosa</h3>
+		<p>sos roșii, mozzarella, prosciutto, ciuperci, ardei, porumb</p>
 	</div>
 
 	<div class="a-col">
-		<h3>Pescatora - 30 LEI</h3>
-		<p>- sos roșii, mozzarella, ton, ceapă</p>
+		<h3 data-price="30 LEI">Pescatora</h3>
+		<p>sos roșii, mozzarella, ton, ceapă</p>
 	</div>
 
 	<div class="a-col">
-		<h3>Vieneze - 25 LEI</h3>
-		<p>- sos roșii, mozzarella, wurstel, porumb</p>
+		<h3 data-price="25 LEI">Vieneze</h3>
+		<p>sos roșii, mozzarella, wurstel, porumb</p>
 	</div>
 
 	<div class="a-col">
-		<h3>Hawaiana - 25 LEI</h3>
-		<p>- sos roșii, mozzarella, prosciutto, ananas</p>
+		<h3 data-price="25 LEI">Hawaiana</h3>
+		<p>sos roșii, mozzarella, prosciutto, ananas</p>
 	</div>
 
 	<div class="a-col">
-		<h3>Salami - 25 LEI</h3>
-		<p>- sos roșii, mozzarella, salam, ciuperci, măsline</p>
+		<h3 data-price="25 LEI">Salami</h3>
+		<p>sos roșii, mozzarella, salam, ciuperci, măsline</p>
 	</div>
 
 	<div class="a-col">
-		<h3>Quattro Formaggi - 30 LEI</h3>
-		<p>- sos roșii, mozzarella, cașcaval, gorgonzola, parmezan</p>
+		<h3 data-price="30 LEI">Quattro Formaggi</h3>
+		<p>sos roșii, mozzarella, cașcaval, gorgonzola, parmezan</p>
 	</div>
 
 	<div class="a-col">
-		<h3>Quattro Carni - 25 LEI</h3>
-		<p>- sos roșii, mozzarella, prosciutto, kaiser, salam, wurstel</p>
+		<h3 data-price="25 LEI">Quattro Carni</h3>
+		<p>sos roșii, mozzarella, prosciutto, kaiser, salam, wurstel</p>
 	</div>
 
 	<div class="a-col">
-		<h3>Quattro Stagioni - 25 LEI</h3>
-		<p>- sos roșii, mozzarella, prosciutto, salam, ciuperci, măsline</p>
+		<h3 data-price="25 LEI">Quattro Stagioni</h3>
+		<p>sos roșii, mozzarella, prosciutto, salam, ciuperci, măsline</p>
 	</div>
 
 	<div class="a-col">
-		<h3>Prosciutto e Funghi - 25 LEI</h3>
-		<p>- sos roșii, mozzarella, prosciutto, ciuperci</p>
+		<h3 data-price="25 LEI">Prosciutto e Funghi</h3>
+		<p>sos roșii, mozzarella, prosciutto, ciuperci</p>
 	</div>
 
 	<div class="a-col">
-		<h3>Prosciutto Porumb - 25 LEI</h3>
-		<p>- sos roșii, mozzarella, prosciutto, porumb</p>
+		<h3 data-price="25 LEI">Prosciutto Porumb</h3>
+		<p>sos roșii, mozzarella, prosciutto, porumb</p>
 	</div>
 
 	<div class="a-col">
-		<h3>Cu de toate - 30 LEI</h3>
-		<p>- sos roșii, mozzarella, prosciutto, salam, kaiser, ciuperci, ardei, porumb</p>
+		<h3 data-price="30 LEI">Cu de toate</h3>
+		<p>sos roșii, mozzarella, prosciutto, salam, kaiser, ciuperci, ardei, porumb</p>
 	</div>
 
 	<div class="a-col">
-		<h3>Florin - 30 LEI</h3>
-		<p>- Cu de toate + măsline</p>
+		<h3 data-price="30 LEI">Florin</h3>
+		<p>Cu de toate + măsline</p>
 	</div>
 
 	<div class="a-col">
-		<h3>Darius - 25 LEI</h3>
-		<p>- sos roșii, mozzarella, salam, porumb, gorgonzola</p>
+		<h3 data-price="25 LEI">Darius</h3>
+		<p>sos roșii, mozzarella, salam, porumb, gorgonzola</p>
 	</div>
 
 	<div class="a-col">
-		<h3>Oxy - 30 LEI</h3>
-		<p>- sos alb, mozzarella, salam picant, ceapă, măsline</p>
+		<h3 data-price="30 LEI">Oxy</h3>
+		<p>sos alb, mozzarella, salam picant, ceapă, măsline</p>
 	</div>
 
 	<div class="a-col">
-		<h3>De post - 25 LEI</h3>
-		<p>- sos roșii, ciuperci, ardei, porumb, măsline</p>
+		<h3 data-price="25 LEI">De post</h3>
+		<p>sos roșii, ciuperci, ardei, porumb, măsline</p>
 	</div>
 
 
 
-	</div>
-	<h2>Sosuri</h2>
-	<div class="a-col">
-		<h3>Sos alb cu usturoi - 3 LEI</h3>
-	</div>
+	</div>	<h2>Sosuri</h2>
+	<div class="meniu-wrapper">
+		<div class="a-col">
+			<h3 data-price="3 LEI">Sos alb cu usturoi</h3>
+		</div>
 
-	<div class="a-col">
-		<h3>Ketchup - 3 LEI</h3>
-	</div>
+		<div class="a-col">
+			<h3 data-price="3 LEI">Ketchup</h3>
+		</div>
 
-	<div class="a-col">
-		<h3>Ketchup picant - 3 LEI</h3>
+		<div class="a-col">
+			<h3 data-price="3 LEI">Ketchup picant</h3>
+		</div>
 	</div>
 
 
@@ -305,14 +304,9 @@
 	</div>
 
 
-
 	<!-- JavaScript -->
 <script>
 
-
-
-
-	
 window.onscroll = function() {myFunction()};
 
 let navbar = document.getElementById("nav");
@@ -326,17 +320,61 @@ function myFunction() {
   }
 }
 
-	function toggleClass(targetId, className) {
-		let target = document.getElementById(targetId);
-		target.classList.toggle(className);
-  		if(window.scrollY===0)
-  		navbar.classList.toggle("sticky");
-	}
+function toggleClass(targetId, className) {
+	let target = document.getElementById(targetId);
+	target.classList.toggle(className);
+	if(window.scrollY===0)
+		navbar.classList.toggle("sticky");
+}
 
 function closeClass(targetId, className) {
 	let target = document.getElementById(targetId);
 	target.classList.remove(className);
+	// Remove sticky class when closing mobile menu if at top
+	if(window.scrollY===0 && targetId === 'navLinks') {
+		navbar.classList.remove("sticky");
+	}
 }
+
+// Add smooth scrolling behavior for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// Add scroll-triggered animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// Observe elements for animation
+document.addEventListener('DOMContentLoaded', () => {
+    const animatedElements = document.querySelectorAll('.Ben-col, .a-col, .review-col');
+    animatedElements.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
+});
 
 </script>
 </body>
